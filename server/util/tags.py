@@ -11,6 +11,7 @@ from server import base_dir, mc, TOOL_API_KEY
 from server.auth import user_mediacloud_client
 from server.cache import cache
 from server.util.stringutil import snake_to_camel
+from server.util.config import get_default_config
 
 logger = logging.getLogger(__name__)
 
@@ -252,6 +253,8 @@ class TagDiscoverer:
     def __getattr__(self, name):
         return getattr(self.instance, name)
 
+# load the config helper
+config = get_default_config()
 
 def processed_for_themes_query_clause():
     """
