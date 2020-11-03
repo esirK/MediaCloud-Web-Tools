@@ -44,7 +44,7 @@ export function urlToExplorer(param) {
 }
 
 export function urlToTools(param) {
-  return `https://tools.civicsignal.org/#/${param}`;
+  return `https://tools.civicsignal.africa/#/${param}`;
 }
 
 export function urlToExplorerQuery(name, keywords, sourceIds, collectionIds, startDate, endDate) {
@@ -61,5 +61,5 @@ export function urlToExplorerQuery(name, keywords, sourceIds, collectionIds, sta
     sources,
     collections,
   };
-  return `https://explorer.civicsignal.org/#/queries/search?qs=${serializeQueriesForUrl([query])}`;
+  return `https://explorer.civicsignal.africa/#/queries/search?qs=${serializeQueriesForUrl([query])}`;
 }
