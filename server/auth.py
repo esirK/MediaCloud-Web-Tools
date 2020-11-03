@@ -5,6 +5,7 @@ import mediacloud.api
 from flask import session
 
 from server import user_db, login_manager
+from server.util.config import get_default_config
 
 logger = logging.getLogger(__name__)
 
@@ -17,6 +18,8 @@ ROLE_STORIES_API = 'stories-api'            # Access to the stories api
 ROLE_SEARCH = 'search'                      # Access to the /search pages
 ROLE_TM_READ_ONLY = 'tm-readonly'           # Topic mapper; excludes media and story editing
 
+# load the config helper
+config = get_default_config()
 
 # User class
 class User(flask_login.UserMixin):

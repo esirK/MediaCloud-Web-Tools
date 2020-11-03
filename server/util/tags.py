@@ -8,6 +8,7 @@ import codecs
 from server import base_dir
 from server.auth import user_mediacloud_client
 from server.cache import cache
+from server.util.config import get_default_config
 
 logger = logging.getLogger(__name__)
 
@@ -70,6 +71,8 @@ VALID_METADATA_IDS = [
 
 TAG_SPIDERED_STORY = 8875452
 
+# load the config helper
+config = get_default_config()
 
 def processed_for_themes_query_clause():
     """
