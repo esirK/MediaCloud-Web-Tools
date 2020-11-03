@@ -5,6 +5,9 @@ SECRET_KEY = A_RANDOM_STRING
 # Controls a variety of debug settings - set to 'dev' or 'prod'
 SERVER_MODE = dev
 
+# Where the mediacloud backend is running from
+MEDIA_CLOUD_API_URL = http://app.civicsignal.africa:8082/api/v2/
+
 # The name of the application you want to run if SERVER_MODE=='prod'
 SERVER_APP = tools
 
