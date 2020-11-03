@@ -24,7 +24,7 @@ export function storyDomainName(story) {
 }
 
 export function urlToSourceManager(param) {
-  return `https://sources.mediacloud.org/#/${param}`;
+  return `https://sources.civicsignal.africa/#/${param}`;
 }
 
 export function urlToCollection(param) {
@@ -36,15 +36,15 @@ export function urlToSource(param) {
 }
 
 export function urlToTopicMapper(param) {
-  return `https://topics.mediacloud.org/#/${param}`;
+  return `https://topics.civicsignal.africa/#/${param}`;
 }
 
 export function urlToExplorer(param) {
-  return `https://explorer.mediacloud.org/#/${param}`;
+  return `https://explorer.civicsignal.africa/#/${param}`;
 }
 
 export function urlToTools(param) {
-  return `https://tools.mediacloud.org/#/${param}`;
+  return `https://tools.civicsignal.org/#/${param}`;
 }
 
 export function urlToExplorerQuery(name, keywords, sourceIds, collectionIds, startDate, endDate) {
@@ -61,5 +61,5 @@ export function urlToExplorerQuery(name, keywords, sourceIds, collectionIds, sta
     sources,
     collections,
   };
-  return `https://explorer.mediacloud.org/#/queries/search?qs=${serializeQueriesForUrl([query])}`;
+  return `https://explorer.civicsignal.org/#/queries/search?qs=${serializeQueriesForUrl([query])}`;
 }
